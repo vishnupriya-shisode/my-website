@@ -1,4 +1,4 @@
-@import "./styles/globals.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +22,7 @@
   --accent-foreground: #030213;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
-  --border: rgba(0, 0, 0, 0.1);
+ 
   --input: transparent;
   --input-background: #f3f3f5;
   --switch-background: #cbced4;
@@ -124,14 +124,6 @@
 }
 
 @layer base {
-  * {
-    border-color: var(--color-border);
-    outline-color: var(--color-ring);
-    outline-width: 2px;
-    outline-style: solid;
-    outline-offset: 0.5px;
-  }
-
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
