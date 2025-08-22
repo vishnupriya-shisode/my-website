@@ -217,9 +217,9 @@ export default function Portfolio() {
                   <CardContent className="p-0 h-full flex items-center justify-center bg-gradient-to-br from-secondary/50 to-accent/30">
                     
                     <ImageComponent 
-                      src="/photo.jpg"
+                      src="src/photo.jpg"
                       alt="Vishnupriya Shisode"
-                      className="w-full h-full object-cover"
+                      className="block w-full h-full object-cover"
                     />
                   </CardContent>
                 </Card>
