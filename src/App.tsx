@@ -215,7 +215,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/30 rounded-3xl blur-3xl" />
                 <Card className="relative aspect-square rounded-3xl overflow-hidden border-2 shadow-2xl">
                   <CardContent className="p-0 h-full flex items-center justify-center bg-gradient-to-br from-secondary/50 to-accent/30">
-                    {/* Update this path later when your photo is in /public */}
+                    
                     <ImageComponent 
                       src="/photo.jpg"
                       alt="Vishnupriya Shisode"
