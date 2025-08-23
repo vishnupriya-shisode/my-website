@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/my-website/", 
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "."),
+      "@": path.resolve(__dirname, "src"),
     },
   },
   css: {
