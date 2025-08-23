@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Github, Linkedin, Mail, Globe, Code2, Cpu, Database, Boxes, Cloud, Sparkles, ExternalLink, ArrowDown, PenTool } from "lucide-react";
+import { Github, Linkedin, Mail, Code2, Cpu, Database, Boxes, Cloud, Sparkles, ArrowDown, PenTool } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 
@@ -214,12 +214,12 @@ export default function Portfolio() {
               <div className="aspect-square max-w-md mx-auto relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/30 rounded-3xl blur-3xl" />
                 <Card className="relative aspect-square rounded-3xl overflow-hidden border-2 shadow-2xl">
-                  <CardContent className="p-0 h-full flex items-center justify-center bg-gradient-to-br from-secondary/50 to-accent/30">
+                  <CardContent className="p-0 h-full w-full">
                     
                     <ImageComponent 
                       src="src/photo.jpg"
                       alt="Vishnupriya Shisode"
-                      className="block w-full h-full object-cover"
+                      className="block max-w-full h-auto object-cover rounded-2xl"
                     />
                   </CardContent>
                 </Card>
