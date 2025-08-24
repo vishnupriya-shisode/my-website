@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail, Code2, Cpu, Database, Boxes, Cloud, Sparkles, A
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import photo from "./assets/photo.jpg";
+import { Moon, Sun } from "lucide-react";
 
 
 // Simple Image component to replace ImageWithFallback for local development
@@ -88,7 +89,7 @@ export default function Portfolio() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "vishnupriya";
+    document.title = "Vishnupriya";
     createFavicon();
   }, []);
 
