@@ -408,6 +408,81 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Projects Section */}
+<section id="projects" className="py-24 px-6 bg-background">
+  <div className="max-w-7xl mx-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-3xl lg:text-4xl font-medium mb-4">Projects</h2>
+      <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        A selection of things I’ve built recently — combining software engineering, AI, and security.
+      </p>
+    </motion.div>
+
+    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      {/* Project 1 */}
+      <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
+        <CardContent className="p-6 space-y-4">
+          <h3 className="text-xl font-medium">Password Strength Checker (AI)</h3>
+          <p className="text-muted-foreground">
+            Built an AI-powered tool to classify and suggest improvements for passwords, improving security awareness.
+          </p>
+          <a
+            href="https://github.com/yourusername/password-checker"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary hover:underline"
+          >
+            View on GitHub →
+          </a>
+        </CardContent>
+      </Card>
+
+      {/* Project 2 */}
+      <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
+        <CardContent className="p-6 space-y-4">
+          <h3 className="text-xl font-medium">Sentiment Analysis Dashboard</h3>
+          <p className="text-muted-foreground">
+            NLP-powered dashboard to understand student feedback and visualize sentiments in real time.
+          </p>
+          <a
+            href="https://github.com/yourusername/sentiment-dashboard"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary hover:underline"
+          >
+            View on GitHub →
+          </a>
+        </CardContent>
+      </Card>
+
+      {/* Project 3 */}
+      <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
+        <CardContent className="p-6 space-y-4">
+          <h3 className="text-xl font-medium">Hackathon Full-Stack App</h3>
+          <p className="text-muted-foreground">
+            A football data analysis platform built with React, Node, Express, and MongoDB during a hackathon.
+          </p>
+          <a
+            href="https://github.com/yourusername/hackathon-project"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary hover:underline"
+          >
+            View on GitHub →
+          </a>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>
+
+
       {/* Contact teaser (no form) */}
 <section id="contact" className="py-8 px-6 bg-secondary/30">
   <div className="max-w-4xl mx-auto text-center">
