@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Github, Linkedin, Mail, Code2, Cpu, Database, Boxes, Cloud, Sparkles, ArrowDown, PenTool, ExternalLink } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
-import photo from "@/assets/photo.jpg";
+
 
 
 // Simple Image component to replace ImageWithFallback for local development
@@ -219,7 +219,7 @@ export default function Portfolio() {
                   <CardContent className="p-0 h-full w-full">
                     
                     <ImageComponent 
-                      src={photo}
+                      src="/photo.jpg"
                       alt="Vishnupriya Shisode"
                       className="block max-w-full h-auto object-cover rounded-2xl"
                     />
