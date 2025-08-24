@@ -3,6 +3,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Github, Linkedin, Mail, Code2, Cpu, Database, Boxes, Cloud, Sparkles, ArrowDown, PenTool } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
+import photo from "./assets/photo.jpg";
+
 
 // Simple Image component to replace ImageWithFallback for local development
 const ImageComponent = ({ src, alt, className }: { src: string; alt: string; className?: string }) => (
@@ -217,7 +219,7 @@ export default function Portfolio() {
                   <CardContent className="p-0 h-full w-full">
                     
                     <ImageComponent 
-                      src="public/photo.jpg"
+                      src={photo}
                       alt="Vishnupriya Shisode"
                       className="block max-w-full h-auto object-cover rounded-2xl"
                     />
@@ -407,14 +409,36 @@ export default function Portfolio() {
       </section>
 
       {/* Contact teaser (no form) */}
-      <section id="contact" className="py-16 px-6 bg-secondary/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-medium mb-4">Let’s Build Something</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Open to internships, junior SWE roles, and collaborations. Drop me a message and let’s create something amazing together.
-          </p>
-        </div>
-      </section>
+<section id="contact" className="py-8 px-6 bg-secondary/30">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-2xl lg:text-3xl font-medium mb-2">Thanks for scrolling this far.</h2>
+    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      As I transition from university to industry, I’m eager to join a team where I can contribute to 
+      impactful projects and continue learning every day. In the next few years, I see myself growing 
+      into a well-rounded engineer, deepening my expertise at the intersection of AI, security, and software development.
+    </p>
+  </div>
+</section>
+
+{/* Contact button */}
+<section className="py-10 px-6 bg-secondary/30 flex justify-center">
+  <a
+    href="mailto:vishnupriyashisode@gmail.com"
+    className="intro-contact inline-flex items-center gap-3 px-10 py-6
+               rounded-2xl border-2 border-primary/40 text-2xl font-medium text-foreground
+               hover:border-primary hover:bg-primary hover:text-primary-foreground
+               transition-all duration-300"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+         className="w-7 h-7" aria-hidden="true">
+      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 
+      18c0 1.1.9 2 2 2h16c1.1 0 
+      2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
+      4l-8 5-8-5V6l8 5 8-5v2z" />
+    </svg>
+    Say hi!
+  </a>
+</section>
 
       {/* Footer (clean, like your reference) */}
       <footer className="py-8 px-6 border-t border-border bg-background">
