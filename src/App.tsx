@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Github, Linkedin, Mail, Code2, Cpu, Database, Boxes, Cloud, Sparkles, ArrowDown, PenTool } from "lucide-react";
+import { Github, Linkedin, Mail, Code2, Cpu, Database, Boxes, Cloud, Sparkles, ArrowDown, PenTool, ExternalLink } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import photo from "./assets/photo.jpg";
@@ -409,7 +409,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-<section id="projects" className="py-24 px-6 bg-background">
+<section id="projects" className="py-24 px-6">
   <div className="max-w-7xl mx-auto">
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -418,71 +418,97 @@ export default function Portfolio() {
       transition={{ duration: 0.6 }}
       className="text-center mb-16"
     >
-      <h2 className="text-3xl lg:text-4xl font-medium mb-4">Projects</h2>
+      <h2 className="text-3xl lg:text-4xl font-medium mb-4">Featured Projects</h2>
       <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-        A selection of things I’ve built recently — combining software engineering, AI, and security.
+        A collection of projects showcasing my skills in full-stack development, AI, and database design.
       </p>
     </motion.div>
 
-    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-      {/* Project 1 */}
-      <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
-        <CardContent className="p-6 space-y-4">
-          <h3 className="text-xl font-medium">Password Strength Checker (AI)</h3>
-          <p className="text-muted-foreground">
-            Built an AI-powered tool to classify and suggest improvements for passwords, improving security awareness.
-          </p>
-          <a
-            href="https://github.com/yourusername/password-checker"
-            target="_blank"
-            rel="noreferrer"
-            className="text-primary hover:underline"
-          >
-            View on GitHub →
-          </a>
-        </CardContent>
-      </Card>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "DevSecOps CI/CD Automation with GitHub Actions",
+          desc: "Created an automated CI/CD pipeline for Python code with linting, validation, and containerization using Docker. Integrated secure coding practices into the GitHub workflow using DevSecOps principles.",
+          image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&h=400&fit=crop",
+          tags: ["Python", "GitHub Actions", "Docker", "DevSecOps"],
+        },
+        {
+          title: "Password Strength Checker (AI)",
+          desc: "Classifies passwords as weak/medium/strong and suggests improvements using machine learning algorithms.",
+          image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
+          tags: ["Python", "AI/ML", "Security"],
+        },
+        {
+          title: "UEL Sentiment Dashboard",
+          desc: "Qualitative insights on student sentiment using NLP with an interactive analytics dashboard.",
+          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+          tags: ["React", "NLP", "Dashboard"],
+        },
+        {
+          title: "Football Data Explorer",
+          desc: "Full-stack application with React, Node.js, and MongoDB for interactive match analytics and statistics.",
+          image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=400&fit=crop",
+          tags: ["React", "Node.js", "MongoDB"],
+        },
+        {
+          title: "Skyview Hotel Oracle DB",
+          desc: "Comprehensive database schema and analytics system for a fictional 5-star hotel chain.",
+          image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop",
+          tags: ["Oracle", "Database", "Analytics"],
+        },
+      ].map((project, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: index * 0.1 }}
+          className="h-full"
+        >
+          <Card className="group h-full flex flex-col overflow-hidden hover:shadow-xl transition-all duration-500 cursor-pointer border-2 hover:border-primary/20">
+            {/* Image */}
+            <div className="aspect-video overflow-hidden">
+              <ImageComponent
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
 
-      {/* Project 2 */}
-      <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
-        <CardContent className="p-6 space-y-4">
-          <h3 className="text-xl font-medium">Sentiment Analysis Dashboard</h3>
-          <p className="text-muted-foreground">
-            NLP-powered dashboard to understand student feedback and visualize sentiments in real time.
-          </p>
-          <a
-            href="https://github.com/yourusername/sentiment-dashboard"
-            target="_blank"
-            rel="noreferrer"
-            className="text-primary hover:underline"
-          >
-            View on GitHub →
-          </a>
-        </CardContent>
-      </Card>
+            {/* Content */}
+            <CardContent className="flex flex-col flex-grow p-6">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="font-medium text-lg group-hover:text-primary transition-colors">
+                  {project.title}
+                </h3>
+                <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
 
-      {/* Project 3 */}
-      <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
-        <CardContent className="p-6 space-y-4">
-          <h3 className="text-xl font-medium">Hackathon Full-Stack App</h3>
-          <p className="text-muted-foreground">
-            A football data analysis platform built with React, Node, Express, and MongoDB during a hackathon.
-          </p>
-          <a
-            href="https://github.com/yourusername/hackathon-project"
-            target="_blank"
-            rel="noreferrer"
-            className="text-primary hover:underline"
-          >
-            View on GitHub →
-          </a>
-        </CardContent>
-      </Card>
+              <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
+                {project.desc}
+              </p>
+
+              {/* Tags at bottom */}
+              <div className="flex flex-wrap gap-2 mt-auto">
+                {project.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+      ))}
     </div>
   </div>
 </section>
 
 
+      {/* Education Section */}
       {/* Contact teaser (no form) */}
 <section id="contact" className="py-8 px-6 bg-secondary/30">
   <div className="max-w-4xl mx-auto text-center">
