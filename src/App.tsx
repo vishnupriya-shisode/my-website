@@ -440,7 +440,7 @@ export default function Portfolio() {
         },
         {
           title: "UEL Sentiment Dashboard",
-          desc: "Qualitative insights on student sentiment using NLP with an interactive analytics dashboard.",
+          desc: "Designed and developed an NLP-driven dashboard in Python to analyze student feedback from surveys and social platforms. Applied sentiment classification and qualitative research to deliver actionable insights for improving student experience and well-being. This project demonstrates my ability to combine AI, data visualization, and ethical tech for real-world impact.",
           image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
           tags: ["React", "NLP", "Dashboard"],
         },
