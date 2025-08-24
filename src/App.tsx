@@ -219,7 +219,7 @@ export default function Portfolio() {
                   <CardContent className="p-0 h-full w-full">
                     
                     <ImageComponent 
-                      src="./assets/photo.jpg"
+                      src={photo}
                       alt="Vishnupriya Shisode"
                       className="block max-w-full h-auto object-cover rounded-2xl"
                     />
