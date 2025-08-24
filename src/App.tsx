@@ -4,7 +4,6 @@ import { Github, Linkedin, Mail, Code2, Cpu, Database, Boxes, Cloud, Sparkles, A
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import photo from "./assets/photo.jpg";
-import { Moon, Sun } from "lucide-react";
 
 
 // Simple Image component to replace ImageWithFallback for local development
