@@ -168,7 +168,7 @@ export default function Portfolio() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  I'm a recent Computer Science graduate from London with a passion for tech -- from software engineering and automation to security and AI. I'm fascinated by building solutions that make a difference.
+                  I'm a recent Computer Science graduate from London with a passion for tech, from software development and automation to security and AI. I'm fascinated by building solutions that make a difference.
                 </motion.p>
               </div>
 
