@@ -61,5 +61,4 @@ The site is fully responsive and deployed for production.
 - Deploying production-ready frontend applications
 - Presenting projects clearly for recruiters
 
----
 
