@@ -2,8 +2,6 @@
 
 A modern, responsive personal portfolio website built to showcase my projects, skills, education, and experience as a Computer Science graduate with interests in software development, AI, security, and automation.
 
-This portfolio serves as a central place for recruiters and collaborators to explore my work and get in touch.
-
 ---
 
 ## ✨ What This Project Is
