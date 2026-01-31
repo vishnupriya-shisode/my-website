@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built to showcase my projects, skills, education, and experience as a Computer Science graduate with interests in software development, AI, security, and automation.
 
-Currently, two official plugins are available:
+This portfolio serves as a central place for recruiters and collaborators to explore my work and get in touch.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ What This Project Is
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This is my personal developer portfolio website, designed and built from scratch using modern web technologies.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+It highlights:
+- Who I am and what I’m passionate about
+- My technical skills and education
+- Featured academic and personal projects
+- Internship and hands-on experience
+- Easy ways to contact me
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+The site is fully responsive and deployed for production.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React (TypeScript)
+- Vite
+- Tailwind CSS
+- JavaScript / TypeScript
+- HTML & CSS
+- Vercel (Deployment)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🚀 Features
+
+- Clean, minimal UI with responsive design
+- Smooth navigation between sections (Intro, About, Projects, Contact)
+- Featured projects with tech tags and descriptions
+- Education and experience timeline
+- Call-to-action buttons for contact and projects
+- Deployed live for easy access
+
+---
+
+## 🧠 The Process
+
+1. Designed the layout with clarity and recruiter-readability in mind  
+2. Built reusable React components for each section  
+3. Styled using Tailwind CSS for consistency and responsiveness  
+4. Added real project data and academic experience  
+5. Optimised performance using Vite  
+6. Deployed and iterated based on feedback  
+
+---
+
+## 📚 What I Learned
+
+- Structuring a real-world React + TypeScript project
+- Writing clean and reusable components
+- Using Tailwind CSS effectively
+- Organising scalable project structure
+- Deploying production-ready frontend applications
+- Presenting projects clearly for recruiters
+
+---
+
+## ▶️ How to Run This Project Locally
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
